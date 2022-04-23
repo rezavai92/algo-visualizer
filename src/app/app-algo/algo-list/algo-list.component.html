@@ -1,0 +1,21 @@
+<div class="algo-list-container" fxLayout="row wrap" fxLayoutAlign="center center" fxLayoutGap="8px">
+	
+		<mat-card (click)="navigateToVisualizer(algo)"  *ngFor="let algo of algoList"  fxFlex="30%" class="algo-card" >
+			<mat-card-header>
+			  <div mat-card-avatar class="example-header-image"></div>
+			  <mat-card-title>{{algo.name}}</mat-card-title>
+			  <mat-card-subtitle class="subtitle">Sorting algorithm</mat-card-subtitle>
+			</mat-card-header>
+			<!-- <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu"> -->
+			<mat-card-content>
+			  <p>
+				<!-- {{algo.description}} -->
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea tempora nobis soluta aspernatur praesentium est non magni. Corporis exercitationem sequi ipsum laboriosam eos, dignissimos similique illo aut aliquam, accusamus hic.
+			  </p>
+			</mat-card-content>
+			<!-- <mat-card-actions>
+			  <button mat-button>LIKE</button>
+			  <button mat-button>SHARE</button>
+			</mat-card-actions> -->
+		</mat-card>
+</div>

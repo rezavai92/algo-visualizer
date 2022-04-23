@@ -1,0 +1,29 @@
+.bubble-sort{
+	width: 100%;
+	height: 600px;
+	background-color: white;
+}
+.sorting-input{
+	background-color: black;
+	border: 1px solid white;
+}
+.array-label{
+	text-align: center;
+	margin-top: 24px;
+}
+.array-item{
+	background-color: skyblue;
+	color: white;
+	transition: background-color height 0.1s ease;
+	font-weight: bold;
+}
+.mt-16{
+	margin-top: 16px;
+}
+
+.w-100-p{
+	width: 100%;
+}
+.h-100-p{
+	height: 100%;
+}

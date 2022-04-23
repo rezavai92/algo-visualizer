@@ -1,0 +1,17 @@
+<div class="visualizer-board-wrapper" >
+	<div class="board" fxLayout="row" fxLayoutAlign="start start">
+		<ng-content>
+
+		</ng-content>
+	</div>
+	<mat-divider></mat-divider>
+	<div fxLayout="row" fxLayoutAlign="start start">
+		<div fxFlex="40" style="margin : 12px 12px 0px 16px" >
+			<button mat-raised-button color="primary" (click)="navigate()" >Home</button>
+		</div>
+		<div fxFlex="60" style="text-align: start;">
+			<ng-content select="footer"></ng-content>
+		</div>
+	</div>
+	
+</div>

@@ -1,0 +1,26 @@
+<app-visulizer-board>
+	<div class="bubble-sort" fxLayout="column" fxLayoutAlign="start center">
+		<div #itemRef fxFlex="80" class="mt-16" fxLayout="row wrap"  fxLayoutGap="8px">
+			<mat-card class="array-item" [style.height]="item.value+'%'" *ngFor="let item of Items">{{item.value}}</mat-card>
+		</div>
+		<div class="mt-16" fxFlex="20">
+			
+				<div class="100-w-p" style="font-size:14px;z-index: 10;" fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="8px">
+					<div fxFlex="100">A = </div>
+					<mat-form-field  fxFlex="100" class="item-input"  appearance="fill">
+					<input [disabled]="sortGoingOn" (keyup.enter)="populateItems()"  matInput placeholder="A = 1,2,3..." [(ngModel)]="arrayItems"  >
+					</mat-form-field>
+					<div fxFlex="100" >
+						<button [disabled]="sortGoingOn" (click)="startSorting()" mat-raised-button color="primary" >GO</button>
+					</div>
+					<mat-error class="array-label" *ngIf="showMaxLimitExceedError">Maximum element should be 15</mat-error>
+				</div>
+				<!-- <mat-progress-bar mode="determinate" [value]="currentProgress"></mat-progress-bar>
+			  -->
+		</div>
+	</div>
+
+	<footer>
+		<h2 style="color: #3248a8 ;">Bubble sort visualizer</h2>
+	</footer>
+</app-visulizer-board>
